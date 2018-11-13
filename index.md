@@ -6,7 +6,14 @@ In diesem kleinen Programmbeispiel für  [Calliope mini Editor](https://makecode
 
 Der Groove-Port A ist direkt mit den beiden analog Ports C16 und C17 verdrahtet.
 Dies ermöglicht es den analogen X-Wert auf Port C17 einzulesen und den entsprechenden Y-Wert auf C16.
-Mein [Grove Thumb Joystick](http://wiki.seeedstudio.com/Grove-Thumb_Joystick/) lieferte auf der X-Achse Werte von Anschlag Links (243), Ruhezustand (518) und Rechtsanschlag (781). Ensprechend waren die Werte für die Y-Achse Anschlag Links (246), Ruhezustand (517) und Rechtsanschlag (780). Diese Werte können von Bauteil zu Bauteil leicht abweichen, deshalb ist es Wichtig den Wert für den Ruhezustand 
+Mein [Grove Thumb Joystick](http://wiki.seeedstudio.com/Grove-Thumb_Joystick/) lieferte auf der X-Achse Werte von Anschlag Links (243), Ruhezustand (518) und Rechtsanschlag (781). Ensprechend waren die Werte für die Y-Achse Anschlag Links (246), Ruhezustand (517) und Rechtsanschlag (780). Diese Werte können von Bauteil zu Bauteil leicht abweichen und sollten in den Variablen x und y angepasst werden.
+Wenn der KNopf A gedrückt wird, werden die tatsächlichen Werte automatisch ausgelesen. Sicherheitshalber reagiert der Joystick aber erst ab einer Abweicheung von 50.
+### Sreenshot
+
+ ![mini-Joystick3(Snake)](https://github.com/Kupferschmid/Calliope/blob/master/mini-Joystick3(Snake).png)
+
+### Quell-Code
+Den Quell-Code einfach herauskopieren und in den [Calliope mini Editor](https://makecode.calliope.cc/) kopieren oder [hier](https://github.com/Kupferschmid/Calliope/blob/master/mini-Joystick3.js) herunter laden.
 
 ```Java-Script-Code für makecode.calliope.cc
 let Index = 0
@@ -86,9 +93,4 @@ basic.forever(() => {
     }
 })
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Sreenshot
-
- ![mini-Joystick3(Snake)](https://github.com/Kupferschmid/Calliope/blob/master/mini-Joystick3(Snake).png)
+viel Spaß ;-)
