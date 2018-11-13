@@ -7,7 +7,11 @@ In diesem kleinen Programmbeispiel für  [Calliope mini Editor](https://makecode
 Der Groove-Port A ist direkt mit den beiden analog Ports C16 und C17 verdrahtet.
 Dies ermöglicht es den analogen X-Wert auf Port C17 einzulesen und den entsprechenden Y-Wert auf C16.
 Mein [Grove Thumb Joystick](http://wiki.seeedstudio.com/Grove-Thumb_Joystick/) lieferte auf der X-Achse Werte von Anschlag Links (243), Ruhezustand (518) und Rechtsanschlag (781). Ensprechend waren die Werte für die Y-Achse Anschlag Links (246), Ruhezustand (517) und Rechtsanschlag (780). Diese Werte können von Bauteil zu Bauteil leicht abweichen und sollten in den Variablen x und y angepasst werden.
-Wenn der KNopf A gedrückt wird, werden die tatsächlichen Werte automatisch ausgelesen. Sicherheitshalber reagiert der Joystick aber erst ab einer Abweicheung von 50.
+Wenn der Kmopf A gedrückt wird, werden die tatsächlichen Werte automatisch ausgelesen. Sicherheitshalber reagiert der Joystick aber erst ab einer Abweicheung von 50.
+
+### Spiel-Idee
+Das Spiel startet mit einer leuchtenden LED in der Mitte des Displays. Es müssen durch steuern des Joysticks alle LEDs eingschaltet werden in nur 25 Schritten. Dannach müssen alle LEDs in weiteren 25 Schritten wieder auf die halbe Leuchtstärke reduziert werden. Dabei darf jede LED nur einmal angesteuert werden. Steuert man zu weit oder nimmt den falschen Weg ist es nicht möglich alle LEDs "anzuzünden" bevor die 25 Schritte abgelaufen sind und die LEDs nur noch mit halber Leuchtstärke leuchten.
+
 ### Sreenshot
 
  ![mini-Joystick3(Snake)](https://github.com/Kupferschmid/Calliope/blob/master/mini-Joystick3(Snake).png)
